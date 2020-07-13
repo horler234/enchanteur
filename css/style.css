@@ -4,11 +4,12 @@
   border: none; }
 
 html {
-  box-sizing: border-box;
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  width: 100vw; }
 
 nav {
   background-color: #ffffff; }
@@ -286,5 +287,201 @@ button.footer-submit {
 
 .sub input:focus {
   outline: none; }
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 2;
+    height: 30px;
+    cursor: pointer; }
+
+  .line1,
+  .line2,
+  .line3 {
+    width: 20px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #DFC39F;
+    transition: all 1s ease; }
+
+  .line2 {
+    transform: translateY(6px);
+    width: 10px;
+    transition: all 0.3s ease; }
+
+  .line3 {
+    transform: translateY(12px); }
+
+  .close {
+    top: 30px; }
+
+  .close .line1 {
+    transform: rotate(45deg); }
+
+  .close .line3 {
+    margin-top: -4px;
+    transform: rotate(-45deg); }
+
+  .close .line2 {
+    width: 0; }
+
+  ul.navbar-list {
+    display: none; }
+
+  ul.navbar-list.responsive {
+    animation: navbar-left 1s ease-in-out;
+    -webkit-animation: navbar-left 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 50px 30px;
+    background-color: #ffffff; }
+
+  ul.navbar-list.responsive li.navbar-list-item {
+    background-color: #ffffff;
+    margin-left: 0;
+    padding: 20px; }
+
+  ul.navbar-list.responsive li.navbar-list-item a {
+    font-size: 13px; }
+
+  ul.navbar-list.responsiveReturn {
+    transform: translateY(-100%);
+    animation: navbar-right 1s ease-in-out;
+    -webkit-animation: navbar-right 1s ease-in-out; }
+
+  @keyframes navbar-left {
+    0% {
+      transform: translateY(-100%); }
+    100% {
+      transform: translateY(0); } }
+  @-webkit-keyframes navbar-left {
+    0% {
+      transform: translateY(-100%); }
+    100% {
+      transform: translateY(0); } }
+  @keyframes navbar-right {
+    0% {
+      transform: translateY(0); }
+    100% {
+      transform: translateY(-100%); } }
+  @-webkit-keyframes navbar-right {
+    0% {
+      transform: translateY(0); }
+    100% {
+      transform: translateY(-100%); } }
+  header {
+    padding-top: 100px; }
+
+  .header-text-wrapper {
+    text-align: center;
+    width: 100%; }
+
+  h1.header-text {
+    font-size: 2rem; }
+
+  p.header-expln {
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px; }
+
+  button.get-projects,
+  button.get-quote {
+    margin-right: 0;
+    font-size: 12px;
+    display: block;
+    margin: auto; }
+
+  button.get-projects {
+    margin-bottom: 20px; }
+
+  .about3894 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px; }
+
+  p.text045 {
+    font-size: 13px; }
+
+  p.service {
+    font-size: 10px; }
+
+  img.about-icon {
+    width: 70px; }
+
+  h1.section-header {
+    font-size: 18px;
+    text-align: center; }
+
+  img.afford {
+    width: 30px; }
+
+  section.services-section {
+    padding-top: 0; }
+
+  .service4893,
+  .footer-brand {
+    width: 100%; }
+
+  p.service-expln {
+    font-size: 13px; }
+
+  p.project-list {
+    font-size: 13px;
+    text-align: center; }
+
+  .project,
+  .project-blank {
+    width: 100%; }
+
+  p.story-snippet {
+    text-align: center;
+    font-size: 13px; }
+
+  .testimony {
+    width: 100%;
+    margin-bottom: 20px; }
+
+  .button-wrapper {
+    margin-top: 20px; }
+
+  .categories {
+    width: 100%; }
+
+  .sec {
+    justify-content: flex-start; }
+
+  .gender {
+    margin-right: 50px; }
+
+  p.enchanteur-footer {
+    font-size: 13px; }
+
+  .gender p,
+  .foot3289 p,
+  p.info {
+    font-size: 13px; }
+
+  .sub {
+    width: 100%; }
+
+  .sub input {
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 20px; }
+
+  button.footer-submit {
+    margin: 0 auto; }
+
+  h1.footer-header {
+    font-size: 24px; }
+
+  h1.footer-header:after {
+    width: 10px;
+    height: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
