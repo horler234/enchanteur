@@ -92,3 +92,33 @@ p.foot-sub-header
 .foot3289 p,
 p.info
     margin-bottom: 15px
+
+#preloader
+    width: 100vw
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+
+.loader-container
+    text-align: center
+    color: $brand-light
+
+h1.loader-text:after
+    content: ""
+    display: inline-block
+    transform: translateY(10px)
+    width: 15px
+    height: 15px
+    background-color: $brand-light
+    border-radius: 50%
+    animation: anim 1s ease infinite
+
+@keyframes anim
+    0%
+        opacity: 0
+    50%
+        opacity: 1
+
+    100%
+        opacity: 0

@@ -2,14 +2,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#DFC39F">
+    <meta property="og:title" content="Enchanteur">
+    <meta property="og:description" content="We’ve got all you need and more. We ensure Our Services are top notch as always, Standing the test of time and staying amazingly unique.">
+    <meta property="og:image" content="assets/Component 1.png">
+    <meta property="og:url" content="https://enchanteur.netlify.app">
+    <meta name="twitter:card" content="assets/codelord.png">
+    <link rel="shortcut icon" href="assets/Component 1.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <title>Enchanteur | Homepage</title>
 </head>
-<body>
+<body onload="preload()">
+
+    <div id="preloader">
+        <div class="loader-container">
+            <h1 class="loader-text">Enchanteur</h1>
+        </div>
+    </div>
     
-    <nav>
+    <nav class="fade">
         <div class="nav-container">
             <ul class="navbar-list">
                 <li class="navbar-list-item"><a href="#">Home</a></li>
@@ -19,13 +32,13 @@
             </ul>
         </div>
     </nav>
-    <div class="hamburger">
+    <div class="hamburger fade">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
     </div>
 
-    <header>
+    <header class="fade">
         <div class="header-container">
             <div class="header-text-wrapper">
                 <h1 class="header-text">Giving You a Touch of Class is Our Topmost Priority</h1>
@@ -39,7 +52,7 @@
         </div>
     </header>
 
-    <section class="about-section">
+    <section class="about-section fade">
         <div class="container">
             <h1 class="section-header">About Enchanteur</h1>
             <div class="section-flex">
@@ -90,7 +103,7 @@
         </div>
     </section>
 
-    <section class="services-section">
+    <section class="services-section fade">
         <div class="container">
             <h1 class="section-header">Services We Provide</h1>
 
@@ -126,7 +139,7 @@
         </div>
     </section>
 
-    <section class="project-section">
+    <section class="project-section fade">
         <div class="container">
             <h1 class="section-header">Recently Concluded Projects</h1>
             <p class="project-list">ARCHITECT - INTERIOR - PERSONAL - CORPORATE</p>
@@ -170,7 +183,7 @@
         </div>
     </section>
 
-    <section class="story-section">
+    <section class="story-section fade">
         <div class="container">
             <h1 class="section-header story">Our Success Stories</h1>
             <p class="story-snippet">Hear what People are Saying</p>
@@ -206,7 +219,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="fade">
         <div class="container">
             <div class="section-flex">
                 <div class="footer-brand">

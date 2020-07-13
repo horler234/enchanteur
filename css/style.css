@@ -12,7 +12,8 @@ body {
   width: 100vw; }
 
 nav {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  display: none; }
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/header-img.png);
@@ -25,26 +26,31 @@ header {
   -o-background-repeat: no-repeat;
   background-repeat: no-repeat;
   padding-top: 180px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  display: none; }
 
 section.about-section,
 section.story-section {
   padding-top: 50px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  display: none; }
 
 section.story-section {
   padding-bottom: 80px; }
 
 section.services-section {
-  padding-top: 50px; }
+  padding-top: 50px;
+  display: none; }
 
 section.project-section {
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  display: none; }
 
 footer {
   background: #44322A;
   color: #ffffff;
-  padding: 50px 0 80px; }
+  padding: 50px 0 80px;
+  display: none; }
 
 .container {
   width: 85%;
@@ -232,6 +238,34 @@ p.foot-sub-header {
 p.info {
   margin-bottom: 15px; }
 
+#preloader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.loader-container {
+  text-align: center;
+  color: #DFC39F; }
+
+h1.loader-text:after {
+  content: "";
+  display: inline-block;
+  transform: translateY(10px);
+  width: 15px;
+  height: 15px;
+  background-color: #DFC39F;
+  border-radius: 50%;
+  animation: anim 1s ease infinite; }
+
+@keyframes anim {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 button.get-projects {
   padding: 15px 40px;
   font-family: inherit;
@@ -288,6 +322,22 @@ button.footer-submit {
 .sub input:focus {
   outline: none; }
 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 @media screen and (max-width: 768px) {
   .hamburger {
     position: absolute;
@@ -295,7 +345,8 @@ button.footer-submit {
     right: 20px;
     z-index: 2;
     height: 30px;
-    cursor: pointer; }
+    cursor: pointer;
+    display: none; }
 
   .line1,
   .line2,

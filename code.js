@@ -23,3 +23,21 @@ ham.addEventListener('click', () => {
     nav.className = 'navbar-list';
   }
 });
+
+let myVar;
+
+function preload() {
+  myVar = setTimeout(showpage, 4000);
+}
+
+const showpage = () => {
+  document.querySelector('#preloader').style.display = 'none';
+  document.querySelector("nav").style.display = 'block';
+  document.querySelector("header").style.display = 'block';
+  document.querySelector("footer").style.display = 'block';
+  document.querySelector(".about-section").style.display = 'block';
+  document.querySelector(".services-section").style.display = 'block';
+  document.querySelector(".project-section").style.display = 'block';
+  document.querySelector(".story-section").style.display = 'block';
+  document.querySelector(".hamburger").style.display = 'block';
+}
